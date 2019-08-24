@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: search
+
+server:
+  port: 18080
+
+search:
+  engines:
+    baidu: "https://www.baidu.com/s?wd={1}"
+    google: "https://www.google.com/search?q={1}"
+    bing: "https://cn.bing.com/search?q={1}"
+    sougou: "https://www.sogou.com/tx?query={1}"
+
+logging:
+  level:
+    root: debug
